@@ -8,19 +8,19 @@ Built by **HM Shihabuddin Jashory (Shihab)** — [Vision Flow](https://visionflo
 
 ## ⚡ 1. Install via AI Agent (Claude Code, Antigravity, Cursor, Codex)
 Paste this single prompt into your AI coding agent:
-> **Prompt:** `Clone https://github.com/visionflow-bd/infinite-llm-fallback-router and run "python install.py" to install the local LLM fallback router and Agent Skill.`
+> **Prompt:** `Clone https://github.com/jashory/infinite-llm-fallback-router and run "python install.py" to install the local LLM fallback router and Agent Skill.`
 
 ## 💻 2. Install via CLI (Terminal / Skills CLI / pip)
 ```bash
 # Option A: Agent Skills CLI
-npx skills add visionflow-bd/infinite-llm-fallback-router
+npx skills add jashory/infinite-llm-fallback-router
 
 # Option B: Direct Git Clone + 1-Command Installer
-git clone https://github.com/visionflow-bd/infinite-llm-fallback-router.git
+git clone https://github.com/jashory/infinite-llm-fallback-router.git
 cd infinite-llm-fallback-router && python install.py
 
 # Option C: Global CLI Tool via pip / uv
-pip install git+https://github.com/visionflow-bd/infinite-llm-fallback-router.git
+pip install git+https://github.com/jashory/infinite-llm-fallback-router.git
 llm-fallback-router --port 20128
 ```
 
