@@ -1,5 +1,16 @@
 # ⚡ Infinite LLM Auto-Fallback Router + 9Router Patch Kit (v2.0)
 
+<p align="center">
+  <a href="https://jashory.github.io/infinite-llm-fallback-router/"><img src="https://img.shields.io/badge/Live_Browser_Playground-Try_Now-22C55E?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Browser Playground"/></a>
+  <a href="https://github.com/jashory/infinite-llm-fallback-router/releases/tag/v2.0.0"><img src="https://img.shields.io/badge/Release-v2.0.0-38BDF8?style=for-the-badge&logo=github&logoColor=white" alt="Release v2.0.0"/></a>
+  <a href="https://github.com/jashory/infinite-llm-fallback-router/blob/main/action.yml"><img src="https://img.shields.io/badge/GitHub_Action-Ready-F59E0B?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Action Ready"/></a>
+</p>
+
+<p align="center">
+  <img src="assets/terminal-demo.svg" alt="infinite-llm-fallback-router terminal preview" width="860"/>
+</p>
+
+
 **Never stop coding on HTTP 429 quota walls again. Chain OpenAI, Anthropic (`/v1/messages`), Gemini, Groq, and OpenRouter into one uninterrupted SSE streaming local endpoint.**
 
 Built by **HM Shihabuddin Jashory (Shihab)** — [Vision Flow](https://visionflowgroup.com)
@@ -36,3 +47,17 @@ llm-fallback-router --port 20128
    - Point **Claude Code** (`ANTHROPIC_BASE_URL=http://127.0.0.1:20128`) directly at the router and seamlessly fail over to OpenAI/Gemini/Groq/OpenRouter providers when Anthropic quota runs out.
 3. **Production `9Router` Custom Patch Modules (`9router-patches/`)**:
    - Includes `ag-model-routing.cjs` and `quota-normalization.cjs` for advanced `9Router` setups.
+
+## GitHub Actions Integration (`action.yml`)
+
+Use `infinite-llm-fallback-router` directly inside any CI/CD workflow:
+
+```yaml
+- name: Run infinite-llm-fallback-router
+  uses: jashory/infinite-llm-fallback-router@v2.0.0
+```
+
+## Live Interactive Browser Playground
+
+Test payloads directly in your browser (100% client-side, zero installation required):
+**[https://jashory.github.io/infinite-llm-fallback-router/](https://jashory.github.io/infinite-llm-fallback-router/)**
